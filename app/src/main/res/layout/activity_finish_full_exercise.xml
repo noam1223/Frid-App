@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activities.FinishFullExerciseActivity">
+
+
+<!--    <View android:id="@+id/emiter_top_left"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginTop="-10dp"-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="1dp" />-->
+
+<!--    <View android:id="@+id/emiter_top_right"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginTop="-10dp"-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="1dp" />-->
+
+
+
+    <TextView
+        android:id="@+id/set_head_line_text_view_finish_full_exercise_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/assistant_semibold"
+        android:text="שם האימון"
+        android:textColor="#383838"
+        android:textSize="19dp" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_ellipse_image_area_finish_full_exercise_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/set_head_line_text_view_finish_full_exercise_activity"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/num_of_set_text_view_finish_full_exercise_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant_semibold"
+            android:text="3"
+            android:textColor="#383838"
+            android:textSize="30dp"
+            android:layout_alignParentBottom="true"/>
+
+
+        <TextView
+            android:id="@+id/sum_of_set_text_view_finish_full_exercise_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/num_of_set_text_view_finish_full_exercise_activity"
+            android:fontFamily="@font/assistant_semibold"
+            android:text="/3"
+            android:textColor="#383838"
+            android:textSize="21dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/complete_text_line_text_view_finish_full_exercise_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout_ellipse_image_area_finish_full_exercise_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/assistant_semibold"
+        android:text="עשית את זה !"
+        android:textColor="#10FFD6"
+        android:textSize="40dp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/images_view_area_constrain_layout_finish_full_exercise_activity"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/complete_text_line_text_view_finish_full_exercise_activity"
+        android:layout_centerHorizontal="true"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:id="@+id/finish_image_group_177_1_image_view_finish_full_exercise_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_group_177_1" />
+
+
+        <ImageView
+            android:id="@+id/finish_image_group_177_2_image_view_finish_full_exercise_activity"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="46dp"
+            android:src="@drawable/ic_group_177_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/well_done_text_view_finish_full_exercise_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/images_view_area_constrain_layout_finish_full_exercise_activity"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/assistant_semibold"
+        android:gravity="center"
+        android:text="האימון הושלם"
+        android:textColor="#000000"
+        android:textSize="29dp" />
+
+
+    <TextView
+        android:id="@+id/sub_text_view_finish_full_exercise_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/well_done_text_view_finish_full_exercise_activity"
+        android:fontFamily="@font/assistant_semibold"
+        android:gravity="center"
+        android:text="נתראה באימון הבא"
+        android:textColor="#7A7979"
+        android:textSize="18dp" />
+
+
+
+    <TextView
+        android:id="@+id/back_to_home_frag_text_view_finish_full_exercise_activity"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/sub_text_view_finish_full_exercise_activity"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/assistant_semibold"
+        android:gravity="center"
+        android:text="חזרה לעמוד הבית"
+        android:textColor="#A74DF5"
+        android:textSize="19dp" />
+
+
+
+
+<!--    <nl.dionsegijn.konfetti.KonfettiView-->
+<!--        android:id="@+id/viewKonfetti"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+</RelativeLayout>

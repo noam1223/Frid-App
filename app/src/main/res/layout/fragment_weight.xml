@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/weight_image_view_weight_fragment"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_group_156" />
+
+
+    <EditText
+        android:id="@+id/weight_edit_text_weight_fragment"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight_image_view_weight_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center"
+        android:hint="משקל נוכחי"
+        android:textColor="#A62D2D2D"
+        android:textSize="26dp"
+        android:backgroundTint="@color/buttonColor"
+        android:inputType="numberDecimal"/>
+
+
+
+</RelativeLayout>

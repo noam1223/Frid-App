@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/presentation_exercise_item_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/presentation_exercise_relative_layout_video_progress_area_item"
+            android:layout_width="109dp"
+            android:layout_height="69dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp">
+
+
+        <ProgressBar
+            android:id="@+id/video_progress_bar_presentation_exercise_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/buttonColor"/>
+
+
+        <VideoView
+            android:id="@+id/presentation_exercise_video_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:gravity="right"
+            android:layout_toStartOf="@+id/presentation_exercise_relative_layout_video_progress_area_item"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/presentation_exercise_name_text_view_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/assistant"
+                android:gravity="center"
+                android:text="שם האימון"
+                android:textColor="#1F1E1E"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/number_of_rehearsals_text_view_presentation_exercise_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 חזרות"
+                android:fontFamily="@font/assistant_light"
+                android:textSize="14dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

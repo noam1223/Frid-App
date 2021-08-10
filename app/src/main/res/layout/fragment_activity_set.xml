@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent_relative_layout_activity_set_fragment"
+    android:background="@color/greyBackgroundScreenColor">
+
+    <ScrollView
+        android:id="@+id/scroll_view_nav_activity_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_scroll_view_area_nav_activity_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/back_fragment_btn_nav_activity_set"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:src="@drawable/ic_back_page_arrow"-->
+<!--                android:background="@color/greyBackgroundScreenColor"-->
+<!--                android:layout_marginTop="33dp"-->
+<!--                android:layout_marginRight="38dp"/>-->
+
+
+            <TextView
+                android:id="@+id/num_of_weeks_text_view_van_activity_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="center"
+                android:text="שבוע"
+                android:textColor="#000000"
+                android:textSize="21dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_type_of_exercise_nav_activity_set"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/num_of_weeks_text_view_van_activity_set"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/num_of_set_text_view_nav_activity_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toStartOf="@id/sum_of_set_text_view_nav_activity_set"
+                    android:fontFamily="@font/assistant"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/sum_of_set_text_view_nav_activity_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toStartOf="@id/type_of_exercise_nav_activity_set"
+                    android:fontFamily="@font/assistant"
+                    android:text="/2"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/type_of_exercise_nav_activity_set"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/assistant"
+                    android:maxLines="1"
+                    android:text="אימון כוח"
+                    android:textColor="#2D2D2D"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/name_part_body_type_of_exercise_nav_activity_set"
+                android:layout_width="90dp"
+                android:layout_height="21dp"
+                android:layout_below="@id/relative_layout_type_of_exercise_nav_activity_set"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/sub_heat_line_background"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="ידיים + בטן"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_time_area_nav_activity_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_part_body_type_of_exercise_nav_activity_set"
+                android:layout_marginTop="8dp">
+
+
+                <TextView
+                    android:id="@+id/timer_of_exercise_text_view_nav_activity_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/assistant"
+                    android:text="00:00"
+                    android:textColor="#000000"
+                    android:textSize="40dp"
+                    android:layout_marginRight="24dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layoutDirection="rtl"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="24dp">
+
+                <TextView
+                    android:id="@+id/name_of_exercise_set_text_view_nav_activity_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/anaheim"
+                    android:textStyle="bold"
+                    android:text="סט א׳"
+                    android:textColor="#1F1E1E"
+                    android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/number_of_exercise_set_text_view_nav_activity_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/assistant"
+                        android:text="1/10"
+                        android:textColor="#1F1E1E"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/timer_progress_bar_nav_activity_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:max="20"
+                    android:progress="10"
+                    android:layout_below="@id/timer_of_exercise_text_view_nav_activity_set"
+                    android:layout_marginTop="8dp"
+                    android:rotation="180"
+                    android:progressDrawable="@drawable/costum_progress_bar_activity_set"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_layout_time_area_nav_activity_set"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/relative_layoute_name_of_exercise_area_nav_activity_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:weightSum="1">
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_current_exercise_name_area_nav_activity_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:layout_marginRight="12dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:fontFamily="@font/assistant"
+                            android:text="עכשיו"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/name_of_exercise_weeks_text_view_nav_activity_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/assistant_semibold"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="14dp"
+                            android:text="ידיים ג׳קסון"
+                            android:textColor="#2D2D2D"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_num_of_repetition_nav_activity_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_marginRight="4dp"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/kind_of_repetition_text_view_nav_activity_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/assistant_light"
+                            android:gravity="center"
+                            android:text="חזרות"
+                            android:textColor="#807E7E"
+                            android:textSize="14dp"/>
+
+
+                        <TextView
+                            android:id="@+id/number_of_repetition_text_view_nav_activity_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/assistant"
+                            android:text="7"
+                            android:maxLines="1"
+                            android:textColor="#000000"
+                            android:textSize="34dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_video_view_area_nav_activity_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relative_layoute_name_of_exercise_area_nav_activity_set"
+                    >
+
+                <ProgressBar
+                    android:id="@+id/video_progress_bar_nav_activity_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/buttonColor"/>
+
+
+                <VideoView
+                    android:id="@+id/video_view_exercise_nav_activity_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:alpha="0"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_control_video_layer_nav_activity_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relative_layout_video_view_area_nav_activity_set"
+                    android:layout_marginTop="12dp">
+
+
+                    <ImageButton
+                        android:id="@+id/skip_backward_img_btn_nav_activity_set"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/ic_skip_next_black_24dp" />
+
+
+                    <ImageButton
+                        android:id="@+id/pause_img_btn_nav_activity_set"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_toStartOf="@id/skip_backward_img_btn_nav_activity_set"
+                        android:background="@drawable/ic_pause_purple_24dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toStartOf="@id/pause_img_btn_nav_activity_set"
+                        android:layout_toEndOf="@id/skip_forward_img_btn_nav_activity_set">
+
+                        <TextView
+                            android:id="@+id/head_line_description_text_view_nav_activity_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="הבא"
+                            android:textColor="#807E7E"
+                            android:fontFamily="@font/assistant_light"
+                            android:textSize="14dp"/>
+
+
+                        <TextView
+                            android:id="@+id/next_exercise_name_text_view_nav_activity_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/head_line_description_text_view_nav_activity_set"
+                            android:layout_alignParentEnd="true"
+                            android:text="סקווטים עם משקולות"
+                            android:textColor="#2D2D2D"
+                            android:fontFamily="@font/assistant_semibold"
+                            android:textSize="14dp"/>
+
+
+                    </RelativeLayout>
+
+
+                    <ImageButton
+                        android:id="@+id/skip_forward_img_btn_nav_activity_set"
+                        android:layout_width="57dp"
+                        android:layout_height="57dp"
+                        android:layout_marginStart="24dp"
+
+                        android:background="@drawable/custom_button_3"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_skip_previous_black_24dp" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/linear_layout_area_text_explanation_exercise_activity_set"
+
+                    android:layout_below="@+id/relative_layout_control_video_layer_nav_activity_set"
+                    android:background="@drawable/custom_button_bottom_top_line"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp">
+
+                    <ImageButton
+                        android:id="@+id/show_explanation_exercise_image_btn_activity_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_group_123"
+                        android:rotation="180"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="end"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="תיאור"
+                        android:textSize="14dp"
+                        android:textColor="#807E7E"
+                        android:fontFamily="@font/assistant_light"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/description_of_exercise_set_text_view_activity_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="בלה בלה בלה בלה בלה  \n בלה בלה בלהבלה בלה בלה"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/assistant"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/linear_layout_area_text_explanation_exercise_activity_set"
+                    />
+
+
+
+                <View
+                    android:id="@+id/view_line_for_area_explanation_activity_set2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha=".1"
+                    android:background="#000000"
+                    android:layout_below="@+id/description_of_exercise_set_text_view_activity_set"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp" />
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

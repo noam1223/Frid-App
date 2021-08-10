@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/linear_layout_nav_time_to_run_item_nav_run_stopper_screen"
+    android:background="@drawable/custom_background"
+    android:gravity="center"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_centerVertical="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/time_for_text_view_item_nav_stopper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="18dp"
+        android:fontFamily="@font/assistant_semibold"
+        android:textColor="@color/buttonColor"
+        android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/minute_time_text_view_item_nav_stopper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="דק׳"
+            android:layout_below="@id/time_for_text_view_item_nav_stopper"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/assistant_semibold"
+            android:textSize="11dp"
+            android:textColor="#A74DF5"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

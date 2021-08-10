@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greyBackgroundScreenColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/back_fragment_btn_nav_run_stopper_screen"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:src="@drawable/ic_back_page_arrow"-->
+<!--                android:background="@color/greyBackgroundScreenColor"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:layout_marginRight="24dp"/>-->
+
+
+            <TextView
+                android:id="@+id/stopper_text_view_week_nav_run_stopper_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/assistant"
+                android:text="שבוע"
+                android:textColor="#000000"
+                android:textSize="21dp" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/sub_title_relative_layout_run_stopper_screen_fragment"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stopper_text_view_week_nav_run_stopper_screen"
+                android:layout_centerHorizontal="true">
+
+
+                <TextView
+                    android:id="@+id/num_of_set_text_view_nav_run_stopper_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toStartOf="@id/sum_of_set_text_view_nav_run_stopper_screen"
+                    android:fontFamily="@font/assistant"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/sum_of_set_text_view_nav_run_stopper_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toStartOf="@id/aerobic_training_title_text_view_nav_run_stopper_screen"
+                    android:fontFamily="@font/assistant"
+                    android:text="/2"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/aerobic_training_title_text_view_nav_run_stopper_screen"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/assistant"
+                    android:maxLines="1"
+                    android:text="אימון אירובי"
+                    android:textColor="#2D2D2D"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/third_sub_title_text_view_run_stopper_screen_fragment"
+                android:layout_width="186dp"
+                android:layout_height="24dp"
+                android:layout_below="@id/sub_title_relative_layout_run_stopper_screen_fragment"
+                android:text="הליכה / ריצה / רכיבה / שחייה"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/assistant_semibold"
+                android:background="@drawable/custom_background_pink"/>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_recycler_view_area_nav_run_stopper_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="146dp"
+                android:layout_below="@id/third_sub_title_text_view_run_stopper_screen_fragment"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:visibility="visible">
+
+
+                <View
+                    android:id="@+id/above_line_view_run_stopper_screen_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@id/choose_time_to_run_recycler_view"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#B3807E7E" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/choose_time_to_run_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#ffffff"
+                    android:scrollbarSize="0dp"
+                    android:scrollbars="horizontal" />
+
+
+                <View
+                    android:id="@+id/below_line_view_run_stopper_screen_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/choose_time_to_run_recycler_view"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#B3807E7E" />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_progress_area_nav_run_stopper_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_recycler_view_area_nav_run_stopper_screen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp">
+
+
+
+                <ProgressBar
+                    android:id="@+id/donut_progress_bar_nav_run_stopper_screen"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:progressDrawable="@drawable/circuler_progress_bar_run"
+                    android:indeterminateOnly="false"
+                    android:progress="1"
+                    android:max="9"
+                    android:rotation="-90"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="עוד"
+                        android:textColor="#474747"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:id="@+id/time_of_stopper_text_view_nav_run_stopper_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:text="00:00:00"
+                        android:textColor="#F7000000"
+                        android:textSize="36dp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_image_buttons_nav_run_stopper_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_layout_progress_area_nav_run_stopper_screen"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp">
+
+
+                <ImageButton
+                    android:id="@+id/start_stopper_btn_nav_run_stopper_screen"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/custom_button_3"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_play_arrow_white_24dp" />
+
+
+                <ImageButton
+                    android:id="@+id/stop_stopper_btn_nav_run_stopper_screen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@id/start_stopper_btn_nav_run_stopper_screen"
+                    android:background="@drawable/custom_background2"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_stop_purple_24dp" />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

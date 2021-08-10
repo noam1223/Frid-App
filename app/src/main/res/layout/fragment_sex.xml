@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/head_line_sex_fragment"
+        android:layout_width="58dp"
+        android:layout_height="46dp"
+        android:src="@drawable/ic_sex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"/>
+
+
+
+    <Button
+        android:id="@+id/male_sex_btn_sex_fragment"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/head_line_sex_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_sex_button"
+        android:text="זכר"
+        android:textSize="23dp"
+        android:textColor="#545454"
+        android:fontFamily="@font/assistant"
+        android:gravity="center"/>
+
+
+
+    <Button
+        android:id="@+id/female_sex_btn_sex_fragment"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/male_sex_btn_sex_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_sex_button"
+        android:text="נקבה"
+        android:textSize="23dp"
+        android:textColor="#545454"
+        android:fontFamily="@font/assistant"
+        android:gravity="center"/>
+
+
+
+</RelativeLayout>

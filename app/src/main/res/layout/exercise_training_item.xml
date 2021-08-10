@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout_pictures_user_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/day_fit_recommended_by_fit_nav_exercise_training"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ראשון"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        android:alpha="0.19" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_parent_exercise_training_item"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layoutDirection="rtl"
+        android:layout_below="@+id/day_fit_recommended_by_fit_nav_exercise_training">
+
+
+        <TextView
+            android:id="@+id/sum_number_of_exercise_training_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:fontFamily="@font/assistant_semibold"
+            android:gravity="center_vertical"
+            android:text="/3"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/number_of_exercise_training_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/sum_number_of_exercise_training_item"
+            android:fontFamily="@font/assistant_semibold"
+            android:gravity="center_vertical"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="21dp" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_toLeftOf="@id/number_of_exercise_training_item"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/background_exercise_training">
+
+
+
+        <View
+            android:id="@+id/view_background_horizontal_exercise_training_item"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_view_orange"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_toStartOf="@id/view_background_horizontal_exercise_training_item">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:cardCornerRadius="8dp"
+                android:layout_centerVertical="true">
+
+
+
+            <ImageView
+                android:id="@+id/image_exercise_training_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:scaleType="centerCrop"
+                android:paddingBottom="90dp"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/linear_layout_types_text_views_exercise_training_item"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toStartOf="@id/view_background_horizontal_exercise_training_item">
+
+
+                <TextView
+                    android:id="@+id/type_name_of_exercise_training_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/assistant"
+                    android:maxLines="1"
+                    android:text="אימון כוח"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <TextView
+                    android:id="@+id/type_body_name_of_exercise_training_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/assistant_semibold"
+                    android:maxLines="1"
+                    android:text="בטן וידיים"
+                    android:textColor="#383737"
+                    android:textSize="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/type_name_of_exercise_training_item"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/check_icon_img_view_exercise_training_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_check_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:visibility="visible" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:id="@+id/view_bottom_line_exercise_training_item"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="#0D000000"
+        android:layout_below="@+id/relative_layout_parent_exercise_training_item"/>
+
+
+
+</RelativeLayout>

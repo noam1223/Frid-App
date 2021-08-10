@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_pictures_user_item"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/recyclerViewBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+        <ImageView
+            android:id="@+id/image_view_picture_item"
+            android:layout_width="250dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_group_31" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/add_picture_image_btn_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_group_69" />
+
+
+            <TextView
+                android:id="@+id/waiting_for_picture_text_view_pictures_user_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="ממתין לעדכון תמונה"
+                android:textColor="#BA807E7E"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/week_num_picture_nav_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="שבוע 1"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

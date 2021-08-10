@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view_nav_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/welcome_user_text_view_nav_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/assistant"
+                android:gravity="center"
+                android:text="היי נועם, בוקר טוב"
+                android:textColor="#383737"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/num_of_weeks_text_view_nav_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome_user_text_view_nav_home"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="center"
+                android:text="שבוע 2"
+                android:textColor="#383737"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+
+
+            <ImageView
+                android:id="@+id/still_in_bad_image_view_home_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_still_in_bad_image"
+                android:layout_below="@id/num_of_weeks_text_view_nav_home"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/progress_view_area_nav_home"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_below="@id/num_of_weeks_text_view_nav_home"
+                android:layout_marginTop="12dp">
+
+
+<!--                <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+<!--                    android:id="@+id/circularProgressBar"-->
+<!--                    android:layout_width="175dp"-->
+<!--                    android:layout_height="175dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:clickable="false"-->
+<!--                    app:cpb_background_progressbar_color="#EAEAEA"-->
+<!--                    app:cpb_background_progressbar_width="8dp"-->
+<!--                    app:cpb_round_border="true" />-->
+
+                <ProgressBar
+                    android:id="@+id/circularProgressBar"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:progress="0"
+                    android:indeterminateOnly="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/circuler_progress_bar_home"/>
+
+
+
+<!--                <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+<!--                    android:id="@+id/circularProgressBarStrength"-->
+<!--                    android:layout_width="175dp"-->
+<!--                    android:layout_height="175dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:clickable="false"-->
+<!--                    app:cpb_background_progressbar_color="#00000000"-->
+<!--                    app:cpb_progress="3"-->
+<!--                    app:cpb_progress_direction="to_right"-->
+<!--                    app:cpb_progress_max="9"-->
+<!--                    app:cpb_progressbar_color="#FFA751"-->
+<!--                    app:cpb_progressbar_width="15dp"-->
+<!--                    app:cpb_round_border="true"-->
+<!--                    app:cpb_start_angle="240"-->
+<!--                    android:visibility="visible"/>-->
+
+                <ProgressBar
+                    android:id="@+id/circularProgressBarStrength"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:progress="300"
+                    android:indeterminateOnly="false"
+                    android:max="900"
+                    android:rotation="150"
+                    android:progressDrawable="@drawable/circuler_progress_bar_strength" />
+
+
+<!--                <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+<!--                    android:id="@+id/circularProgressBarAerobic"-->
+<!--                    android:layout_width="175dp"-->
+<!--                    android:layout_height="175dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:clickable="false"-->
+<!--                    app:cpb_background_progressbar_color="#00000000"-->
+<!--                    app:cpb_progress="2"-->
+<!--                    app:cpb_progress_direction="to_right"-->
+<!--                    app:cpb_progress_max="6"-->
+<!--                    app:cpb_progressbar_color="#F80759"-->
+<!--                    app:cpb_progressbar_width="15dp"-->
+<!--                    app:cpb_round_border="true"-->
+<!--                    android:visibility="visible"/>-->
+
+
+                <ProgressBar
+                    android:id="@+id/circularProgressBarAerobic"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:progress="200"
+                    android:indeterminateOnly="false"
+                    android:max="600"
+                    android:rotation="-90"
+                    android:progressDrawable="@drawable/circuler_progress_bar_aerobic" />
+
+
+
+<!--                <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+<!--                    android:id="@+id/circularProgressBarFlexibility"-->
+<!--                    android:layout_width="175dp"-->
+<!--                    android:layout_height="175dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:clickable="false"-->
+<!--                    app:cpb_background_progressbar_color="#00000000"-->
+<!--                    app:cpb_progress="2"-->
+<!--                    app:cpb_progress_direction="to_right"-->
+<!--                    app:cpb_progress_max="6"-->
+<!--                    app:cpb_progressbar_color="#0072FF"-->
+<!--                    app:cpb_progressbar_width="15dp"-->
+<!--                    app:cpb_round_border="true"-->
+<!--                    app:cpb_start_angle="120"-->
+<!--                    android:visibility="invisible"/>-->
+
+
+                <ProgressBar
+                    android:id="@+id/circularProgressBarFlexibility"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:progress="200"
+                    android:indeterminateOnly="false"
+                    android:max="600"
+                    android:rotation="30"
+                    android:progressDrawable="@drawable/circuler_progress_bar_flexibility" />
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/mapping_exercise_colors_relative_layout_nav_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progress_view_area_nav_home"
+                android:layout_marginTop="24dp"
+                android:padding="6dp">
+
+
+                <LinearLayout
+                    android:id="@+id/parent_first_mapping_linear_layout_nav_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="18dp"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/first_mapping_linear_layout_nav_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/flexibility_mapping_text_view_nav_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/assistant_semibold"
+                            android:text="גמישות"
+                            android:textColor="#383737"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="3dp"
+                            android:background="@drawable/circle_colored_flexibility" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/flexibility_percent_text_view_nav_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/assistant"
+                        android:text="20%"
+                        android:textColor="#383737"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/second_mapping_linear_layout_nav_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/strength_mapping_text_view_nav_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/assistant_semibold"
+                            android:text="כוח"
+                            android:textColor="#383737"
+                            android:textSize="14dp" />
+
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="3dp"
+                            android:background="@drawable/circle_colored_strength" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/strength_percent_text_view_nav_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/assistant"
+                        android:text="20%"
+                        android:textColor="#383737"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="18dp"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/third_mapping_linear_layout_nav_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/aerobic_mapping_text_view_nav_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/assistant_semibold"
+                            android:text="אירובי"
+                            android:textColor="#383737"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="3dp"
+                            android:background="@drawable/circle_colored_aerobic" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/aerobic_percent_text_view_nav_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/assistant"
+                        android:text="20%"
+                        android:textColor="#383737"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_switch_fit_area_nav_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mapping_exercise_colors_relative_layout_nav_home"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/assistant_semibold"
+                    android:text="אימונים לשבוע זה"
+                    android:textColor="#383737"
+                    android:textSize="18dp" />
+
+
+                <Button
+                    android:id="@+id/open_choose_week_btn_home_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="בחרי שבוע"
+                    android:visibility="gone" />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_btn_fit_nav_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/assistant"
+                    android:gravity="center"
+                    android:text="המלצת Frid App"
+                    android:textColor="#383737"
+                    android:textSize="14dp"
+                    android:thumb="@drawable/thumb_selector"
+                    app:track="@drawable/track_selector"
+                    app:switchMinWidth="16dp"
+                    app:switchPadding="8dp"/>
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exercise_training_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_below="@id/relative_layout_switch_fit_area_nav_home"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="24dp"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_finish_exercise_week_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutDirection="rtl"
+                android:layout_below="@id/relative_layout_switch_fit_area_nav_home"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_group_176_grey" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="כל הכבוד!"
+                    android:textSize="29dp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/assistant_semibold"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ביצעת את כל האימונים לשבוע זה"
+                    android:textSize="18dp"
+                    android:textColor="#7A7979"
+                    android:fontFamily="@font/assistant_semibold"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_finish_exercise_12_weeks_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutDirection="rtl"
+                android:layout_below="@id/relative_layout_switch_fit_area_nav_home"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/ic_group_177_1_gray" />
+
+
+                <ImageView
+                    android:layout_width="83dp"
+                    android:layout_height="83dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="46dp"
+                    android:src="@drawable/ic_group_177_2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="עשית את זה!"
+                    android:textSize="29dp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/assistant_semibold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="תוכנית האימונים הושלמה"
+                    android:textSize="29dp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/assistant_semibold"
+                    android:layout_marginTop="4dp"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="קדימה לכבוש את היעד הבא!"
+                    android:textSize="18dp"
+                    android:textColor="#7A7979"
+                    android:fontFamily="@font/assistant_semibold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="נשמח לשמוע את דעתך"
+                    android:textSize="14dp"
+                    android:textColor="#2D2D2D"
+                    android:fontFamily="@font/assistant_semibold"
+                    android:layout_marginTop="8dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

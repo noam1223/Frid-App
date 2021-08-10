@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/personal_image_view_last_first_name_fragment"
+        android:layout_width="45dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_group_151" />
+
+
+    <EditText
+        android:id="@+id/first_name_edit_text_last_first_name_fragment"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_image_view_last_first_name_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/buttonColor"
+        android:fontFamily="@font/assistant"
+        android:gravity="center"
+        android:hint="שם פרטי"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="#A62D2D2D"
+        android:textSize="26dp" />
+
+
+    <EditText
+        android:id="@+id/last_name_edit_text_last_first_name_fragment"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_name_edit_text_last_first_name_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/buttonColor"
+        android:fontFamily="@font/assistant"
+        android:gravity="center"
+        android:hint="שם משפחה"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="#A62D2D2D"
+        android:textSize="26dp" />
+
+
+</RelativeLayout>
